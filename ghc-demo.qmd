@@ -1,0 +1,92 @@
+---
+title: "GHC Demo Assignment"
+subtitle: "CSC 110 - Fall 2025"
+author: Riley Uy
+date: October 2025
+format:
+  html:
+    theme: quartz
+    toc: true
+    toc-depth: 3
+    toc-location: right-body
+  pdf:
+    toc: true
+    toc-depth: 3
+    toc-title: "Homework Table of Contents"
+    fig-width: 8
+    fig-height: 5
+    geometry:
+      - top=20mm
+      - left=20mm
+      - right=20mm
+      - heightrounded
+---
+```{r setup}
+output = FALSE
+library(tidyverse)
+```
+
+# Homework
+```{r}
+#| fig-cap: "Fuel mileage scatterplot"
+ggplot(mpg,aes(x = displ, y = hwy)) +
+  geom_point() +
+  labs(
+    title = "Does the vehical's engine size effect the highway fule mileage?",
+    subtitle = "Data from 1999 to 2008",
+    y = "Highway MPG",
+    x = "Engine Displacement in Litres"
+  )
+```
+[Davidson](https://www.davidson.edu/)
+
+* WRI 101
+* ECO 202
+* FRE 201
+
+1. White Collar
+2. Gilmore Girls
+3. Criminal Minds
+
+homework footnote[^1]
+
+[^1]: This is the footnote
+
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+
+```{mermaid}
+flowchart LR
+  A[School] --> B(Classes)
+  B --> C{Type}
+  C --> D[Arts]
+  C --> E[Stem]
+```
+
+> "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal." - Abraham Lincoln
+
+:::{.callout-note}
+callout note block
+:::
+
+:::{.callout-tip}
+callout tip block
+:::
+
+:::{.callout-important collapse="true"}
+collapsable callout important block
+:::
+
+
+{{< pagebreak >}}
+
+
+# Reflection
+
+**Paragraph One:** I learned how how to make a make a footnote. I think this will be very useful when creating our final project website. Because we are working with data sources, footnotes will be a way we can cite the information. I also think using footnotes to cite the sources will create a more aesthetic and cleaner look, rather than having parentheses with the in-text citation at the end of the sentence.
+
+*Another tip/trick* I think will be helpful in our final project is adding a theme. There are many to pick from to match what look you are going for in your final project. I also think adding a theme is a way for it to look more organized, professional, and put together.
+
+***Finally***, I think I will be adding `collapsible callouts` to the final project. I think they will be very useful in providing more detail or information to the user in a way that makes it easy to see. By making them collapsible, you are able to give the user easy access to information without overwhelming them with clutter. They are able to open it when they want to read and close it when they are done. 
+
+
